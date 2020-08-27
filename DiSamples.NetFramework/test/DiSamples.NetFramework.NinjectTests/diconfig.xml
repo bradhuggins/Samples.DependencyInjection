@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<module name="diconfig">
+  <bind service="DiSamples.NetFramework.Domain.Interfaces.IService, DiSamples.NetFramework.Domain" 
+        to="DiSamples.NetFramework.Domain.Models.ServiceConcrete1, DiSamples.NetFramework.Domain" />
+
+  <bind name ="ServiceConcrete1"
+    service="DiSamples.NetFramework.Domain.Interfaces.IService, DiSamples.NetFramework.Domain"
+      to="DiSamples.NetFramework.Domain.Models.ServiceConcrete1, DiSamples.NetFramework.Domain" />
+
+  <bind name ="ServiceConcrete2"
+    service="DiSamples.NetFramework.Domain.Interfaces.IService, DiSamples.NetFramework.Domain"
+      to="DiSamples.NetFramework.Domain.Models.ServiceConcrete2, DiSamples.NetFramework.Domain" />
+  
+</module>
