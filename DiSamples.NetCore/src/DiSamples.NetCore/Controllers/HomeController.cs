@@ -24,5 +24,13 @@ namespace DiSamples.NetCore.Controllers
             var result = _service.GetData();
             return Ok(result);
         }
+
+        [Route("v2")]
+        public IActionResult v2([FromServices] IService service)
+        {
+            var result = service.GetData();
+            return Ok(result);
+        }
+
     }
 }
