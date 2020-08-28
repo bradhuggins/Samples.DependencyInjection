@@ -7,7 +7,7 @@ namespace DiSamples.NetCore.Concrete2
     {
         public string GetData()
         {
-            return "Message from Service2";
+            return "Message from Service2 @ " + DateTime.Now.ToString();
         }
     }
 }
