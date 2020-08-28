@@ -33,6 +33,7 @@ namespace DiSamples.NetCore.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(actual);
+            Assert.IsNotNull(actual.Value);
         }
 
         [TestMethod]
